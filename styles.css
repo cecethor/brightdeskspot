@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -46,18 +47,16 @@ section {
     margin: 20px 0;
 }
 
-#home {
-    background: #f4f4f4;
-    text-align: center;
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-#about, #products, #contact {
-    background: #e2e2e2;
-    padding: 40px 0;
-}
-
-.product {
-    margin-bottom: 20px;
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
 }
 
 footer {
