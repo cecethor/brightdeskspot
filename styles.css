@@ -1,14 +1,18 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background-color: #202020;
     color: white;
     padding: 10px 0;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -36,38 +40,15 @@ header {
     font-weight: bold;
 }
 
+.logo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
 main {
     padding-top: 60px; /* Offset for fixed header */
 }
 
 .hero {
     background-image: url('https://example.com/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.product-item {
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 30%;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+    background-size:
